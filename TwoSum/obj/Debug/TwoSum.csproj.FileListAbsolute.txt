@@ -1,0 +1,6 @@
+D:\2.C#\LeetCode\TwoSum\bin\Debug\TwoSum.exe.config
+D:\2.C#\LeetCode\TwoSum\obj\Debug\TwoSum.csprojResolveAssemblyReference.cache
+D:\2.C#\LeetCode\TwoSum\bin\Debug\TwoSum.exe
+D:\2.C#\LeetCode\TwoSum\bin\Debug\TwoSum.pdb
+D:\2.C#\LeetCode\TwoSum\obj\Debug\TwoSum.exe
+D:\2.C#\LeetCode\TwoSum\obj\Debug\TwoSum.pdb
