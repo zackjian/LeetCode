@@ -11,6 +11,6 @@ namespace LeetCode.Services
     /// </summary>
     public interface ILongestCommonPrefixService
     {
-        string Get(List<string> list);
+        string Get(string[] array);
     }
 }

@@ -11,17 +11,17 @@ namespace LeetCode.Services
     /// </summary>
     public class LongestCommonPrefixService : ILongestCommonPrefixService
     {
-        public string Get(List<string> list)
+        public string Get(string[] array)
         {
             var result = string.Empty;
 
-            var minLength = list.Min(s => s.Length);
+            var minLength = array.Min(s => s.Length);
             
             for (int i = 0; i < minLength; i++)
             {
                 var wordList = new List<string>();
 
-                foreach (var item in list)
+                foreach (var item in array)
                 {
                     var charArray = item.ToCharArray();
 

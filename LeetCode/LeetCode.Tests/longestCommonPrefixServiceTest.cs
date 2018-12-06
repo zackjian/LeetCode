@@ -23,7 +23,7 @@ namespace LeetCode.Tests
             //// Arrange 
             var target = this.GetService();
 
-            var stubData = new List<string>
+            var stubData = new string[]
             {
                 "Flower",
                 "Flow",
@@ -50,7 +50,7 @@ namespace LeetCode.Tests
             //// Arrange
             var target = this.GetService();
 
-            var stubData = new List<string>
+            var stubData = new string[]
             {
                 "Dog",
                 "Racecar",
