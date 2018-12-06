@@ -16,31 +16,24 @@ namespace LeetCode.Services
             var result = string.Empty;
 
             var minLength = list.Min(s => s.Length);
-
-            var tempWord = string.Empty;
-
+            
             for (int i = 0; i < minLength; i++)
             {
-                result += tempWord;
-
-                tempWord = string.Empty;
+                var wordList = new List<string>();
 
                 foreach (var item in list)
                 {
                     var charArray = item.ToCharArray();
-                    var word = charArray[i].ToString();
 
-                    if (string.IsNullOrEmpty(tempWord))
-                    {
-                        tempWord = word;
-                        continue;
-                    }
-
-                    if (tempWord != word)
-                    {
-                        return result;
-                    }                    
+                    wordList.Add(charArray[i].ToString());
                 }
+
+                if (wordList.GroupBy(s => s).LongCount() > 1)
+                {
+                    return result;
+                }
+
+                result += wordList[0];
             }
 
             return result;
