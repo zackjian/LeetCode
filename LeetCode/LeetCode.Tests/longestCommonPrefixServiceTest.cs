@@ -23,10 +23,44 @@ namespace LeetCode.Tests
             //// Arrange 
             var target = this.GetService();
 
+            var stubData = new List<string>
+            {
+                "Flower",
+                "Flow",
+                "Flight"
+            };
+
             var expected = "Fl";
 
             //// Act
-            var actual = target.Get(Arg.Any<List<string>>());
+            var actual = target.Get(stubData);
+
+            //// Assert
+            actual.Should().Be(expected);
+        }
+
+        /// <summary>
+        /// Given	
+        /// When	
+        /// Then	
+        /// </summary>
+        [Fact]
+        public void Test_Input_List_Have_Dog_Racecar_Car_Return_Empty()
+        {
+            //// Arrange
+            var target = this.GetService();
+
+            var stubData = new List<string>
+            {
+                "Dog",
+                "Racecar",
+                "Car"
+            };
+
+            var expected = string.Empty;
+
+            //// Act
+            var actual = target.Get(stubData);
 
             //// Assert
             actual.Should().Be(expected);
