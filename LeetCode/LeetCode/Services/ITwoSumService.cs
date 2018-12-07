@@ -8,6 +8,6 @@ namespace LeetCode.Services
 {
     public interface ITwoSumService
     {
-        int[] TwoSum(int[] stubNums, int stubTarget);
+        int[] TwoSum(int[] nums, int target);
     }
 }
